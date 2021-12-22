@@ -1,5 +1,5 @@
 # Batiyormuyuz.tk
-### Shows USD/TRY EUR/TRY GBP/TRY etc.
+### Simple TRY based currency exchange website.
 
 ## Running Website
 - Donwload project.

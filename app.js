@@ -7,7 +7,7 @@ const dkkValue = document.getElementsByClassName("dkk-value")[0];
 const rubValue = document.getElementsByClassName("rub-value")[0];
 const cnyValue = document.getElementsByClassName("cny-value")[0];
 
-let apikey = "cdb487c0-539a-11ec-b7b6-313fba5b5e01";
+let apikey = "YOUR_API_KEY";
 
 fetch("https://api.vatcomply.com/rates?base=USD")
     .then(response => response.json())

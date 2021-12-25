@@ -9,19 +9,19 @@ const cnyValue = document.getElementsByClassName("cny-value")[0];
 
 let apikey = "YOUR_API_KEY";
 
-fetch("https://api.vatcomply.com/rates?base=USD")
+fetch('https://freecurrencyapi.net/api/v2/latest?base_currency=USD&apikey=' + apikey)
     .then(response => response.json())
     .then(data => (
         usdValue.innerHTML = data.rates.TRY.toFixed(5) + " TL"
     ))
 
-fetch('https://api.vatcomply.com/rates?base=EUR')
+fetch('https://freecurrencyapi.net/api/v2/latest?base_currency=EUR&apikey=' + apikey)
     .then(response => response.json())
     .then(data => (
         eurValue.innerHTML = data.rates.TRY.toFixed(5) + " TL"
     ));
 
-fetch('https://api.vatcomply.com/rates?base=GBP')
+fetch('https://freecurrencyapi.net/api/v2/latest?base_currency=GBP&apikey=' + apikey)
     .then(response => response.json())
     .then(data => (
         gbpValue.innerHTML = data.rates.TRY.toFixed(5) + " TL"
@@ -33,25 +33,25 @@ fetch('https://freecurrencyapi.net/api/v2/latest?base_currency=AZN&apikey=' + ap
         aznValue.innerHTML = data.data.TRY.toFixed(5) + " TL"
     ));
     
-fetch('https://api.vatcomply.com/rates?base=BGN')
+fetch('https://freecurrencyapi.net/api/v2/latest?base_currency=BGN&apikey=' + apikey)
     .then(response => response.json())
     .then(data => (
         bgnValue.innerHTML = data.rates.TRY.toFixed(5) + " TL"
     ));
 
-fetch('https://api.vatcomply.com/rates?base=DKK')
+fetch('https://freecurrencyapi.net/api/v2/latest?base_currency=DKK&apikey=' + apikey)
     .then(response => response.json())
     .then(data => (
         dkkValue.innerHTML = data.rates.TRY.toFixed(5) + " TL"
     ));
 
-fetch('https://api.vatcomply.com/rates?base=RUB')
+fetch('https://freecurrencyapi.net/api/v2/latest?base_currency=RUB&apikey=' + apikey)
     .then(response => response.json())
     .then(data => (
         rubValue.innerHTML = data.rates.TRY.toFixed(5) + " TL"
     ));
 
-fetch('https://api.vatcomply.com/rates?base=CNY')
+fetch('https://freecurrencyapi.net/api/v2/latest?base_currency=CNY&apikey=' + apikey)
     .then(response => response.json())
     .then(data => (
         cnyValue.innerHTML = data.rates.TRY.toFixed(5) + " TL"

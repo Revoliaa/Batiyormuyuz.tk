@@ -12,19 +12,19 @@ let apikey = "YOUR_API_KEY";
 fetch('https://freecurrencyapi.net/api/v2/latest?base_currency=USD&apikey=' + apikey)
     .then(response => response.json())
     .then(data => (
-        usdValue.innerHTML = data.rates.TRY.toFixed(5) + " TL"
+        usdValue.innerHTML = data.data.TRY.toFixed(5) + " TL"
     ))
 
 fetch('https://freecurrencyapi.net/api/v2/latest?base_currency=EUR&apikey=' + apikey)
     .then(response => response.json())
     .then(data => (
-        eurValue.innerHTML = data.rates.TRY.toFixed(5) + " TL"
+        eurValue.innerHTML = data.data.TRY.toFixed(5) + " TL"
     ));
 
 fetch('https://freecurrencyapi.net/api/v2/latest?base_currency=GBP&apikey=' + apikey)
     .then(response => response.json())
     .then(data => (
-        gbpValue.innerHTML = data.rates.TRY.toFixed(5) + " TL"
+        gbpValue.innerHTML = data.data.TRY.toFixed(5) + " TL"
     ));
     
 fetch('https://freecurrencyapi.net/api/v2/latest?base_currency=AZN&apikey=' + apikey)
@@ -36,23 +36,23 @@ fetch('https://freecurrencyapi.net/api/v2/latest?base_currency=AZN&apikey=' + ap
 fetch('https://freecurrencyapi.net/api/v2/latest?base_currency=BGN&apikey=' + apikey)
     .then(response => response.json())
     .then(data => (
-        bgnValue.innerHTML = data.rates.TRY.toFixed(5) + " TL"
+        bgnValue.innerHTML = data.data.TRY.toFixed(5) + " TL"
     ));
 
 fetch('https://freecurrencyapi.net/api/v2/latest?base_currency=DKK&apikey=' + apikey)
     .then(response => response.json())
     .then(data => (
-        dkkValue.innerHTML = data.rates.TRY.toFixed(5) + " TL"
+        dkkValue.innerHTML = data.data.TRY.toFixed(5) + " TL"
     ));
 
 fetch('https://freecurrencyapi.net/api/v2/latest?base_currency=RUB&apikey=' + apikey)
     .then(response => response.json())
     .then(data => (
-        rubValue.innerHTML = data.rates.TRY.toFixed(5) + " TL"
+        rubValue.innerHTML = data.data.TRY.toFixed(5) + " TL"
     ));
 
 fetch('https://freecurrencyapi.net/api/v2/latest?base_currency=CNY&apikey=' + apikey)
     .then(response => response.json())
     .then(data => (
-        cnyValue.innerHTML = data.rates.TRY.toFixed(5) + " TL"
+        cnyValue.innerHTML = data.data.TRY.toFixed(5) + " TL"
     ));     
